@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — Преображение</title>
+  <meta name="description" content="Реставрация объектов культурного наследия, проектирование, 3D-сканирование. Москва, Садовническая 6с2. Лицензия Минкультуры.">
+  <link rel="icon" href="../static/img/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/site.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="bar__logo" href="../">
+      <img src="../static/img/logo-mark.svg" alt="">
+      <span class="bar__name">
+        <span class="bar__title">Преображение</span>
+        <span class="bar__tag">Лаборатория креативных решений</span>
+      </span>
+    </a>
+    <nav class="bar__nav">
+      <a href="../uslugi/">Услуги</a>
+      <a href="../portfolio/">Проекты</a>
+      <a href="../3d-skanirovanie/">3D-сканирование</a>
+      <a href="../o-kompanii/">О нас</a>
+      <a href="../kontakty/">Контакты</a>
+    </nav>
+    <a class="bar__phone" href="tel:+79067753333">+7 906 775 33 33</a>
+    <button class="bar__menu" type="button" data-nav-toggle aria-label="Меню">Меню</button>
+  </header>
+  <nav class="drawer" hidden data-nav-mobile>
+    <a href="../uslugi/">Услуги</a>
+    <a href="../portfolio/">Проекты</a>
+    <a href="../3d-skanirovanie/">3D-сканирование</a>
+    <a href="../o-kompanii/">О нас</a>
+    <a href="../kontakty/">Контакты</a>
+    <a href="tel:+79067753333">+7 906 775 33 33</a>
+  </nav>
+
+  <main>
+<section class="page"><div class="wrap two">
+  <div>
+    <h1>Контакты</h1>
+    <p><a href="tel:+79067753333">+7 906 775 33 33</a><br><a href="tel:+79850248743">+7 985 024 87 43</a></p>
+    <p><a href="mailto:preobrajenie@anfilada.msk.ru">preobrajenie@anfilada.msk.ru</a></p>
+    <p>Подворье Соловецкого монастыря, ул. Садовническая, 6с2, Москва</p>
+    <p><a href="https://t.me/ARCHI_TE_KTO_1" target="_blank" rel="noopener">Telegram</a> · <a href="https://vk.ru/preobrazhenie.design" target="_blank" rel="noopener">ВКонтакте</a></p>
+  </div>
+  <form class="card" id="c-form">
+    <h2>Напишите нам</h2>
+    <label>Телефон<input name="phone" type="tel" required></label>
+    <label>Имя<input name="name"></label>
+    <label>Сообщение<textarea name="message" rows="4"></textarea></label>
+    <input type="hidden" name="source" value="contacts">
+    <button class="btn" type="submit">Отправить</button>
+    <p class="status" hidden></p>
+  </form>
+</div></section>
+</main>
+
+  <footer class="foot">
+    <div class="wrap foot__grid">
+      <a class="foot__brand" href="../">
+        <img src="../static/img/logo-mark.svg" alt="">
+        <span>Преображение</span>
+      </a>
+      <div>
+        <p>ООО «Лаборатория креативных решений ПРЕОБРАЖЕНИЕ»</p>
+        <p>ИНН 9705239524 · ОГРН 1257700102384</p>
+        <p>Подворье Соловецкого монастыря, ул. Садовническая, 6с2, Москва</p>
+      </div>
+      <div>
+        <p><a href="tel:+79067753333">+7 906 775 33 33</a></p>
+        <p><a href="tel:+79850248743">+7 985 024 87 43</a></p>
+        <p><a href="mailto:preobrajenie@anfilada.msk.ru">preobrajenie@anfilada.msk.ru</a></p>
+        <p><a href="https://t.me/ARCHI_TE_KTO_1" target="_blank" rel="noopener">Telegram</a> · <a href="https://vk.ru/preobrazhenie.design" target="_blank" rel="noopener">ВКонтакте</a></p>
+        <p>Лицензия Минкультуры Л040-00103-00/02070047</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="lead-modal">
+    <form id="lead-form">
+      <button type="button" data-close-lead aria-label="Закрыть">×</button>
+      <h2>Перезвоним в течение часа</h2>
+      <p>Напишите номер — обсудим объект и сроки.</p>
+      <label>Телефон<input name="phone" type="tel" required placeholder="+7"></label>
+      <label>Имя<input name="name" type="text"></label>
+      <label>Объект<textarea name="message" rows="3" placeholder="Храм, усадьба, адрес"></textarea></label>
+      <input type="hidden" name="source" value="modal">
+      <button class="btn" type="submit">Жду звонка</button>
+      <p class="status" hidden></p>
+    </form>
+  </dialog>
+
+  <script src="../static/js/site.js"></script>
+  <script>document.getElementById("c-form").addEventListener("submit", window.preobrazhenieSubmitLead);</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Циркуль Преображение">
+  <circle cx="40" cy="12" r="8" fill="#1c1714"/>
+  <circle cx="40" cy="12" r="3.2" fill="#8d7352"/>
+  <path d="M36.5 18.5 L18 58 L28.5 61.5 L42 24 Z" fill="#1c1714"/>
+  <path d="M43.5 18.5 L62 58 L51.5 61.5 L38 24 Z" fill="#1c1714"/>
+  <rect x="27" y="34" width="26" height="5.5" rx="1.2" fill="#8d7352"/>
+  <path d="M18 58 L12.5 74 L26 66.5 Z" fill="#1c1714"/>
+  <path d="M62 58 L67.5 74 L54 66.5 Z" fill="#1c1714"/>
+</svg>
